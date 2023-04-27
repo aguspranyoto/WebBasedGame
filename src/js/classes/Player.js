@@ -24,12 +24,20 @@ class Player {
     switch (direction) {
       case "ArrowUp":
         this.velocity.y = -Math.sqrt(2 * this.gravity * this.heightJump);
-
+        break;
+      case "w":
+        this.velocity.y = -Math.sqrt(2 * this.gravity * this.heightJump);
         break;
       case "ArrowLeft":
         this.velocity.x = -1 * this.speed;
         break;
+      case "a":
+        this.velocity.x = -1 * this.speed;
+        break;
       case "ArrowRight":
+        this.velocity.x = 1 * this.speed;
+        break;
+      case "d":
         this.velocity.x = 1 * this.speed;
         break;
       default:
